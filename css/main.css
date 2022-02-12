@@ -1,0 +1,14 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* CSS Variables */
+  :root {
+    --bg-light: #ffffff;
+    --bg-accent: #fefaf5;
+    --accent-color: #db7a4e;
+    --main-color: #335576;
+  }
