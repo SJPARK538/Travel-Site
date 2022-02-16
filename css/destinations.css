@@ -1,0 +1,184 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 ;
+    line-height: 1.5;
+}
+
+  /* CSS Variables */
+:root {
+    --bg-light: #ffffff;
+    --bg-accent: #fefaf5;
+    --accent-color: #db7a4e;
+    --main-color: #335576;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+
+
+  /* Header & Nav Section */
+#nav-bar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;   
+    background-color: var(--bg-light);
+}
+
+.nav-bar-left {
+    color: var(--main-color); 
+    width: 70%;
+    margin: 5px 0;
+}
+
+.nav-bar-right {
+    width: 23%;
+}
+
+.nav-bar-right .nav-bar-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 10px 0px;
+}
+
+.nav-bar-right .nav-bar-menu li a {
+    color: var(--main-color);
+    font-size: 0.9rem;
+}
+
+/* itinerary Section */
+#itinerary {
+    height: 75vh;
+    width: 100%;
+    background-image: url(../assets/Images/hawaii.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#itinerary .container {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    border: solid 2px blue;
+}
+
+.destn {
+    font-size: 4rem;
+    font-weight: 600;
+    color:var(--bg-light);
+    position: absolute;
+    top: 50px;
+}
+
+.itinerary {
+    border: red 1px solid;  
+    width: 80%;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.itinerary-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 50px 0;
+    background: var(--bg-light);
+    max-width: 290px;
+    min-width: 245px;
+    min-height: 320px;
+    max-height: 340px;
+    border-radius: 8px;
+}
+.day {
+    width: 80%;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+}
+
+.activities {
+    background-color: var(--bg-accent);
+    width: 80%;
+    padding: 10px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--bg-accent);
+    padding: 50px 0;
+}
+
+footer .container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-division {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+.footer-division-top {
+    color:var(--main-color);
+}
+
+.footer-division-subtitle {
+    color:var(--accent-color);
+}
+
+.footer-division-bottom {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-division-email{
+    display:flex;
+    flex-direction: column;
+}
+
+.footer-division-info {
+    color:var(--main-color);
+}
+
+
+.icon {
+    width: 23px;
+    height:23px;
+}
+
+
