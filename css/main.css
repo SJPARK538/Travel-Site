@@ -31,6 +31,9 @@ p {
     font-weight: 300;
 }
 
+.active {
+    border-bottom: #db7a4e solid 2px;
+}
 
 
   /* Header & Nav Section */
@@ -61,6 +64,10 @@ p {
 .nav-bar-right .nav-bar-menu li a {
     color: var(--main-color);
     font-size: 0.9rem;
+}
+
+.nav-bar-right .nav-bar-menu li a:hover {
+    border-bottom: solid 2px var(--main-color);
 }
 
 /* Hero Section */

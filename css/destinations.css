@@ -31,6 +31,9 @@ p {
     font-weight: 300;
 }
 
+.active {
+    border-bottom: #db7a4e solid 2px;
+}
 
 
   /* Header & Nav Section */
@@ -64,6 +67,10 @@ p {
     font-size: 0.9rem;
 }
 
+.nav-bar-right .nav-bar-menu li a:hover {
+    border-bottom: solid 2px var(--main-color);
+}
+
 /* itinerary Section */
 #itinerary {
     height: 75vh;
@@ -79,7 +86,6 @@ p {
     width: 80%;
     height: 100%;
     position: relative;
-    border: solid 2px blue;
 }
 
 .destn {
@@ -91,7 +97,6 @@ p {
 }
 
 .itinerary {
-    border: red 1px solid;  
     width: 80%;
     min-height: 100%;
     margin: 0 auto;
