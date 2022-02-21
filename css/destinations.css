@@ -72,7 +72,7 @@ p {
 }
 
 /* itinerary Section */
-#itinerary {
+#itinerary.hawaii{
     height: 75vh;
     width: 100%;
     background-image: url(../assets/Images/hawaii.jpg);
@@ -80,6 +80,25 @@ p {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#itinerary.iceland{
+    height: 75vh;
+    width: 100%;
+    background-image: url(../assets/Images/iceland.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#itinerary.greece{
+    height: 75vh;
+    width: 100%;
+    background-image: url(../assets/Images/greece.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 
 #itinerary .container {
     margin: 0 auto;
@@ -117,8 +136,7 @@ p {
     background: var(--bg-light);
     max-width: 290px;
     min-width: 245px;
-    min-height: 320px;
-    max-height: 340px;
+    height: 40vh;
     border-radius: 8px;
 }
 .day {
@@ -187,3 +205,81 @@ footer .container {
 }
 
 
+/* Media Queries */
+@media (max-width: 1024px) {
+    header, #nav-bar, .nav-bar-left .nav-bar-menu, .nav-bar-right, li, a {
+        display: flex;
+        flex-direction: column;
+        width: 100%;    
+    }
+
+    footer .container{
+        width: 60%;
+    }
+
+    h3, h4, p {
+        font-size: 0.7rem;
+    }   
+
+    .destn {
+        font-size: 3rem;
+    }
+    
+    .itinerary {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .itinerary-card {
+        max-width: 250px;
+        min-width: 225px;
+    
+}
+
+@media (max-width:768px ){
+    .itinerary-card {
+        max-width: 200px;
+        min-width: 175px;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    footer .container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+}
+@media (max-width:565px ){
+    .destn {
+        position: relative;
+    }
+
+    .itinerary {
+        display: flex;;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 100%;
+        padding: 0;
+    }
+
+    .itinerary-card {
+        max-width: 150px;
+        min-width: 255px;
+        min-height: 100px;
+        max-height: 150px;
+    }
+
+    .day {
+        font-size: 1rem;
+    }
+
+    .activities {
+        font-size: 0.8rem;
+    }
+}
+}
