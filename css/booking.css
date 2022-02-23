@@ -91,7 +91,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 40vh;
+    gap: 10px;
+    height: 100%;
     padding: 20px;
 }
 
@@ -106,7 +107,7 @@ label.title {
 
 
 input, #places, textarea {
-    width: 50%;
+    width: 60%;
 }
 
 #places {
@@ -170,7 +171,6 @@ footer .container {
     color:var(--main-color);
 }
 
-
 .icon {
     width: 23px;
     height:23px;
@@ -188,6 +188,10 @@ footer .container {
         width: 60%;
     }
 
+    #form .container {
+        width: 60%;
+    }
+
     h1 {
         font-size:2rem;
     }
@@ -198,7 +202,9 @@ footer .container {
 }
 
 @media (max-width:768px ){
-
+    label.title {
+        font-size: 0.8rem;
+    }
     h1 {
         font-size: 1.3rem;
     }
@@ -206,6 +212,12 @@ footer .container {
     h2 {
         font-size: 0.8rem;
     }
+
+    .contactform {
+        width: 100%;
+        padding: 0;
+    }
+
 
     footer .container{
         flex-direction: column;

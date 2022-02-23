@@ -98,8 +98,6 @@ p {
     background-position: center;
 }
 
-
-
 #itinerary .container {
     margin: 0 auto;
     width: 80%;
@@ -219,17 +217,19 @@ footer .container {
 
     h3, h4, p {
         font-size: 0.7rem;
-    }   
+    }       
 
     .destn {
         font-size: 3rem;
     }
-    
+
     .itinerary {
         width: 100%;
         margin: 0 auto;
+        padding-bottom: 50px;;
+
     }
-    
+
     .itinerary-card {
         max-width: 250px;
         min-width: 225px;
@@ -250,23 +250,26 @@ footer .container {
         flex-direction: column;
         text-align: center;
         align-items: center;
-    }
+    }   
     
 }
 @media (max-width:565px ){
+    #itinerary.hawaii, #itinerary.iceland, #itinerary.greece {
+        height: 100%;
+    }
+    
     .destn {
         position: relative;
+        font-size: 1.8rem;
     }
 
     .itinerary {
-        display: flex;;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 20px;
-        height: 100%;
-        padding: 0;
-    }
+        gap: 10px;
 
+    }
     .itinerary-card {
         max-width: 150px;
         min-width: 255px;
