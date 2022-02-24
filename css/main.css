@@ -45,9 +45,13 @@ p {
 }
 
 .nav-bar-left {
-    color: var(--main-color); 
     width: 70%;
     margin: 5px 0;
+}
+
+h2.logo {
+    color: var(--main-color);
+    text-decoration:none ;
 }
 
 .nav-bar-right {

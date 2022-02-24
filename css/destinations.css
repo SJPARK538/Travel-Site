@@ -45,6 +45,11 @@ p {
     background-color: var(--bg-light);
 }
 
+h2.logo {
+    color: var(--main-color);
+    text-decoration:none ;
+}
+
 .nav-bar-left {
     color: var(--main-color); 
     width: 70%;
